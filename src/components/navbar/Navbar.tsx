@@ -10,6 +10,7 @@ const Navbar: FC<Props> = ({ setPage }) => {
         <Button onClick={() => setPage("planets")}>Planets</Button>
         <Button onClick={() => setPage("people")}>People</Button>
       </ContainerButtons>
+      <a href='vitau://vitau.mx/producto/asa/2421'>link al app</a>
     </Container>
   );
 };
