@@ -4,9 +4,9 @@ import { Props } from "./planet.types";
 
 const Planet: FC<Props> = ({ planet, population, terrain, ...rest }) => (
   <Container {...rest}>
-    <NamePlanet>{ planet }</NamePlanet>
-    <Text>Population - { population }</Text>
-    <Text>Terrain - { terrain }</Text>
+    <NamePlanet>{planet}</NamePlanet>
+    <Text>Population - {population}</Text>
+    <Text>Terrain - {terrain}</Text>
   </Container>
 );
 

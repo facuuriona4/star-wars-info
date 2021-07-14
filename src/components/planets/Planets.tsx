@@ -16,12 +16,14 @@ const Planets = () => {
     <Container>
       {
         status === "success" ? (
-          data.results.map((el: {name: string, population: string, terrain: string}, i: number) => <Planet key={i} planet={el.name} population={el.population} terrain={el.terrain}/>)
-        ) 
-        : 
-        <Progress>
-          <CircularProgress color="inherit"/>
-        </Progress>
+          data.results.map((el: { name: string, population: string, terrain: string }, i: number) => {
+            return <Planet key={i} planet={el.name} population={el.population} terrain={el.terrain} />
+          })
+        )
+          :
+          <Progress>
+            <CircularProgress color="primary" />
+          </Progress>
       }
     </Container>
   );
